@@ -1,6 +1,9 @@
 ![Header image](image/header.png)
+
 React Native `ImageBackground` is useful. But you know what's even more useful?
+
 `ImageBackground` with overlay.
+
 This is exactly it.
 
 ## Get Started
