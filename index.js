@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
   ViewPropTypes
 } from "react-native";
 
@@ -82,10 +83,10 @@ const styles = StyleSheet.create({
 
 ImageOverlay.propTypes = {
   rounded: PropTypes.number,
-  source: PropTypes.source,
+  source: Image.propTypes.source,
   height: PropTypes.number,
   title: PropTypes.string,
-  titleStyle: ViewPropTypes.style,
+  titleStyle: Text.propTypes.style,
   overlayColor: PropTypes.string,
   overlayAlpha: PropTypes.number,
   contentPosition: PropTypes.oneOf(["top", "center", "bottom"]),
