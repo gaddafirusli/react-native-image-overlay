@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import {
-  StyleSheet,
   Dimensions,
   ImageBackground,
-  View,
+  StyleSheet,
   Text,
+  View,
   ViewPropTypes
 } from "react-native";
 
@@ -14,17 +14,17 @@ const { width } = Dimensions.get("window");
 export default class ImageOverlay extends Component {
   render() {
     const {
+      blurRadius,
+      children,
+      containerStyle,
+      contentPosition,
+      height,
+      overlayAlpha,
+      overlayColor,
       rounded,
       source,
-      height,
-      containerStyle,
-      blurRadius,
-      overlayColor,
-      overlayAlpha,
-      children,
       title,
       titleStyle,
-      contentPosition,
       ...props
     } = this.props;
 
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
 
 ImageOverlay.propTypes = {
   rounded: PropTypes.number,
-  source: PropTypes.string,
+  source: PropTypes.source,
   height: PropTypes.number,
   title: PropTypes.string,
   titleStyle: ViewPropTypes.style,
