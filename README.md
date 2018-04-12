@@ -20,7 +20,7 @@ This is exactly it.
         render () {
             return (
                 <ImageOverlay
-                  source={{ uri:="http://example.com/img/cool.jpg" }}
+                  source={{ uri:"http://example.com/img/cool.jpg" }}
                   height={200}
                   overlayColor="cyan"
                   overlayAlpha={0.8}
@@ -46,4 +46,54 @@ This is exactly it.
 
 ## Example
 
-WIP
+### Simple overlay color
+
+The most basic use-case of this module is to add colored overlay on top of your image.
+
+    <ImageOverlay source={{ uri:"http://example.com/img/cool.jpg" }} />
+
+Default overlay is color is `#000000` with `0.5` opacity. You can customize it to any color
+
+    <ImageOverlay
+        source={{ uri:"http://example.com/img/cool.jpg" }}
+        overlayColor="cyan"
+        overlayAlpha={0.8} />
+
+### Overlay with title text
+
+![Title text image](image/titledemo.png)
+
+If you want to display a simple white text on top of the image, you can use the `title` prop.
+
+    <ImageOverlay
+        source={{ uri:"http://example.com/img/cool.jpg" }}
+        title="This is the title" />
+
+The title will be `center`-ed by default. You can move it to the `top` or `bottom` using the `contentPosition` prop
+
+    <ImageOverlay
+        source={{ uri:"http://example.com/img/cool.jpg" }}
+        title="This is the title"
+        contentPosition="bottom" />
+
+Additionally, you can change the styling by passing the `titleStyle` along
+
+    <ImageOverlay
+        source={{ uri:"http://example.com/img/cool.jpg" }}
+        title="This is the title"
+        titleStyle={{ color: 'yellow', fontWeight: 'bold' }} />
+
+### Overlay with child component
+
+![Child component image](image/customdemo.png)
+
+You can pass extra components to be displayed on top of your image.
+
+    <ImageOverlay
+      source={{ uri:"http://example.com/img/cool.jpg" }}
+      height={400}>
+        <View>
+        	<Image style={styles.avatar} source={{uri:"adasd"}} />
+        	<Text style={styles.name}>Amelia Edward</Text>
+    	</View>
+    </ImageOverlay>
