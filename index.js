@@ -15,8 +15,8 @@ export default class ImageOverlay extends Component {
   render() {
     const {
       rounded,
-      image,
-      imageHeight,
+      source,
+      height,
       containerStyle,
       blurRadius,
       overlayColor,
@@ -40,12 +40,12 @@ export default class ImageOverlay extends Component {
 
     return (
       <ImageBackground
-        source={{ uri: image }}
+        source={source}
         style={[
           styles.image,
           {
             borderRadius: rounded,
-            height: imageHeight,
+            height: height,
             justifyContent: justifyContent
           },
           containerStyle
@@ -83,8 +83,8 @@ const styles = StyleSheet.create({
 
 ImageOverlay.propTypes = {
   rounded: PropTypes.number,
-  image: PropTypes.string,
-  imageHeight: PropTypes.number,
+  source: PropTypes.string,
+  height: PropTypes.number,
   title: PropTypes.string,
   titleStyle: ViewPropTypes.style,
   overlayColor: PropTypes.string,
@@ -96,7 +96,7 @@ ImageOverlay.propTypes = {
 };
 
 ImageOverlay.defaultProps = {
-  imageHeight: 300,
+  height: 300,
   overlayColor: "#000000",
   overlayAlpha: 0.5,
   contentPosition: "center"
