@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-overlay",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Add overlays on top of ImageBackground",
   "main": "index.js",
   "scripts": {},
