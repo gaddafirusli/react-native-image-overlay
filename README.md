@@ -20,6 +20,7 @@ export class MyApp extends Component {
     render () {
         return (
             <ImageOverlay source={{ uri:"http://example.com/img/cool.jpg" }} />
+            <ImageOverlay source={require("../../assets/banner.png")} />
         )
     }
 }
@@ -99,7 +100,7 @@ You can pass extra components to be displayed on top of your image.
         <Image style={styles.avatar} source={{uri:"http://example.com/user/avatar.png"}} />
         <Text style={styles.name}>Amelia Edwards</Text>
         <Text style={styles.location}>Kuala Lumpur, Malaysia</Text>
-        <Button text="Follow me />
+        <Button text="Follow me" />
     </View>
 </ImageOverlay>
 ```
