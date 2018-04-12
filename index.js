@@ -25,7 +25,6 @@ export default class ImageOverlay extends Component {
       title,
       titleStyle,
       contentPosition,
-      subTitle,
       ...props
     } = this.props;
 
