@@ -8,10 +8,6 @@ React Native `ImageBackground` is useful. But you know what's even more useful? 
 
     $ npm install --save react-native-image-overlay
 
-or
-
-    $ yard add react-native-image-overlay
-
 ### Usage
 
     import  ImageOverlay  from  "react-native-image-overlay";
@@ -43,3 +39,7 @@ or
 | `source`          | The image source (either a remote URL or a local file resource).                           | ImageSourcePropType |             |
 | `title`           | Text to be displayed over the image                                                        | String              | `undefined` |
 | `titleStyle`      | Additional styling for the title text                                                      | Style               | `undefined` |
+
+## Example
+
+WIP
