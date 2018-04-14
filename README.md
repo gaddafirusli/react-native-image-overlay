@@ -1,8 +1,10 @@
+<h1 align="center">
+    react-native-image-overlay
+</h1>
+<p align="center">React Native <code>ImageBackground</code> is useful. But you know what's even more useful?<br />
+<code>ImageBackground</code> with overlay. This is exactly it.</p>
+
 ![Header image](image/header.png)
-
-React Native `ImageBackground` is useful. But you know what's even more useful?
-
-`ImageBackground` with overlay. This is exactly it.
 
 <br />
 
@@ -16,10 +18,13 @@ $ npm install --save react-native-image-overlay
 ### Usage
 ```javascript
 import ImageOverlay from "react-native-image-overlay";
+
 export class MyApp extends Component {
     render () {
         return (
+            // For external image
             <ImageOverlay source={{ uri:"http://example.com/img/cool.jpg" }} />
+            // For local asset
             <ImageOverlay source={require("../../assets/banner.png")} />
         )
     }
