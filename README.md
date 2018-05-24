@@ -4,9 +4,13 @@
 <p align="center">React Native <code>ImageBackground</code> is useful. But you know what's even more useful?<br />
 <code>ImageBackground</code> with overlay. This is exactly it.</p>
 
+
 ![Header image](image/header.png)
 
 <br />
+
+
+[![npm](https://img.shields.io/npm/dt/react-native-hero.svg?style=flat-square)](https://www.npmjs.com/package/react-native-image-overlay) 
 
 ## Get Started
 
