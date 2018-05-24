@@ -9,8 +9,7 @@
 
 <br />
 
-
-[![npm](https://img.shields.io/npm/dt/react-native-hero.svg?style=flat-square)](https://www.npmjs.com/package/react-native-image-overlay) 
+[![npm](https://img.shields.io/npm/dt/react-native-image-overlay.svg)](https://www.npmjs.com/package/react-native-image-overlay)
 
 ## Get Started
 
