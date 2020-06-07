@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { TextStyle } from 'react-native';
+import { TextStyle, ViewStyle } from 'react-native';
 
 interface ImageOverlayProps {
   source: string;
@@ -11,6 +11,7 @@ interface ImageOverlayProps {
   height?: number;
   contentPosition?: 'top' | 'center' | 'bottom';
   blurRadius?: number;
+  containerStyle?: ViewStyle;
 }
 
 export default class ImageOverlay extends Component<ImageOverlayProps> {}
