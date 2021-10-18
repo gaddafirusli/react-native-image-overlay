@@ -26,6 +26,7 @@ export default class ImageOverlay extends Component {
       source,
       title,
       titleStyle,
+      imageStyle,
       ...props
     } = this.props;
 
@@ -51,6 +52,7 @@ export default class ImageOverlay extends Component {
           containerStyle
         ]}
         blurRadius={blurRadius}
+        imageStyle={imageStyle}
       >
         <View
           style={{
@@ -92,7 +94,8 @@ ImageOverlay.propTypes = {
   contentPosition: PropTypes.oneOf(["top", "center", "bottom"]),
   containerStyle: ViewPropTypes.style,
   blurRadius: PropTypes.number,
-  children: PropTypes.element
+  children: PropTypes.element,
+  imageStyle: Image.propTypes.style
 };
 
 ImageOverlay.defaultProps = {
