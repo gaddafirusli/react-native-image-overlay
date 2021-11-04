@@ -27,6 +27,7 @@ export default class ImageOverlay extends Component {
       title,
       titleStyle,
       imageStyle,
+      onLoad,
       ...props
     } = this.props;
 
@@ -53,6 +54,7 @@ export default class ImageOverlay extends Component {
         ]}
         blurRadius={blurRadius}
         imageStyle={imageStyle}
+        onLoad={onLoad}
       >
         <View
           style={{
