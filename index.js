@@ -6,9 +6,10 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
-  ViewPropTypes
+  Image
 } from "react-native";
+
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 
 const { width } = Dimensions.get("window");
 
