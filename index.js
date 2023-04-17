@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {ImagePropTypes, TextPropTypes} from 'deprecated-react-native-prop-types';
+import {ImagePropTypes, TextPropTypes, ViewPropTypes} from 'deprecated-react-native-prop-types';
 import {
   Dimensions,
   ImageBackground,
   StyleSheet,
   Text,
   View,
-  Image,
-  ViewPropTypes
+  Image
 } from "react-native";
 
 const { width } = Dimensions.get("window");
