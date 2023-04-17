@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import {ImagePropTypes, TextPropTypes} from 'deprecated-react-native-prop-types';
 import {
   Dimensions,
   ImageBackground,
@@ -83,10 +84,10 @@ const styles = StyleSheet.create({
 
 ImageOverlay.propTypes = {
   rounded: PropTypes.number,
-  source: Image.propTypes.source,
+  source: ImagePropTypes.source,
   height: PropTypes.number,
   title: PropTypes.string,
-  titleStyle: Text.propTypes.style,
+  titleStyle: TextPropTypes.style,
   overlayColor: PropTypes.string,
   overlayAlpha: PropTypes.number,
   contentPosition: PropTypes.oneOf(["top", "center", "bottom"]),

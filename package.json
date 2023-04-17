@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gaddafirusli/react-native-image-overlay#readme",
   "dependencies": {
+    "deprecated-react-native-prop-types": "^4.0.0",
     "prop-types": "^15.6.1"
   }
 }
